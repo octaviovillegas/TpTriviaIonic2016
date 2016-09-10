@@ -1,0 +1,37 @@
+[
+	{
+		"pregunta":"lorem ipsum",
+		"rta1":"lorem ipsum",
+		"rta2":"lorem ipsum",
+		"rta3":"lorem ipsum",
+		"correcta": 1
+	},
+	{
+		"pregunta":"lorem ipsum",
+		"rta1":"lorem ipsum",
+		"rta2":"lorem ipsum",
+		"rta3":"lorem ipsum",
+		"correcta": 1
+	},
+	{
+		"pregunta":"lorem ipsum",
+		"rta1":"lorem ipsum",
+		"rta2":"lorem ipsum",
+		"rta3":"lorem ipsum",
+		"correcta": 1
+	},
+	{
+		"pregunta":"lorem ipsum",
+		"rta1":"lorem ipsum",
+		"rta2":"lorem ipsum",
+		"rta3":"lorem ipsum",
+		"correcta": 1
+	},
+	{
+		"pregunta":"lorem ipsum",
+		"rta1":"lorem ipsum",
+		"rta2":"lorem ipsum",
+		"rta3":"lorem ipsum",
+		"correcta": 1
+	}
+]
