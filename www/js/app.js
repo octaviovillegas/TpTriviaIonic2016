@@ -52,15 +52,6 @@ angular.module('triviaUTN', ['ionic', 'triviaUTN.controllers'])
       }
     });
 
-  /*.state('trivia.single', {
-    url: '/inicio/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
-      }
-    } 
-  });*/
-  // if none of the above states are matched, use this as the fallback
+  //Si ninguna URL coincide, se direcciona a: 
   $urlRouterProvider.otherwise('/trivia/inicio');
 });
