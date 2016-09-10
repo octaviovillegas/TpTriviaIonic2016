@@ -1,0 +1,20 @@
+<ion-view view-title="TRIVIA LOCA">
+  <ion-content class="padding">
+    <center><h1>{{preguntaJuego[0].pregunta}}</h1></center>
+
+    <button class="button button-block button-positive" ng-click="esCorrecta(1)">
+    	{{preguntaJuego[0].rta1}}
+	</button>
+
+	<button class="button button-block button-positive" ng-click="esCorrecta(2)">
+    	{{preguntaJuego[0].rta2}}
+	</button>
+
+	<button class="button button-block button-positive" ng-click="esCorrecta(3)">
+    	{{preguntaJuego[0].rta3}}
+	</button>
+
+  </ion-content>
+</ion-view>
+
+
