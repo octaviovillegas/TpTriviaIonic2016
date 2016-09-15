@@ -106,7 +106,7 @@ angular.module('triviaUTN.controllers', [])
     url: './preguntas.json'
   }).then(function successCallback(response) {
 
-      aleatorio = Math.floor((Math.random() * response.data.length)); //Numero aleatorio
+      var aleatorio = Math.floor((Math.random() * response.data.length)); //Numero aleatorio
       $scope.preguntaJuego.push(response.data[aleatorio]); //Pregunta aleatoria
       console.log($scope.preguntaJuego);
     }, function errorCallback(response) {
