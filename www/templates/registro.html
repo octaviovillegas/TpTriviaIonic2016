@@ -1,27 +1,33 @@
-<ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Registrate</h1>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="enviarRegistro()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Usuario</span>
-          <input type="text" ng-model="dataForm.usuario">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Contraseña</span>
-          <input type="password" ng-model="dataForm.contra1">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Repetir contraseña</span>
-          <input type="password" ng-model="dataForm.contra2">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Registrarte</button>
-        </label>
-        <p>¿Ya tenés cuenta? <a ng-click="login();">Logueate</a></p>
-      </div>
-    </form>
-  </ion-content>
-</ion-modal-view>
+<ion-view title="Registrate" id="page7" style="background-color:#DB3254;">
+    <ion-content padding="true" class="has-header">
+        <form id="registro-form2" class="list" ng-submit="submitReg(usr)">
+            <ion-list id="registro-list3">
+                <label class="item item-input" id="registro-input4">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" placeholder="" ng-model="usr.usuario" ng-change="usuarioExiste('{{usr.usuario}}')" required>
+                </label>
+                <label class="item item-input" id="registro-input5">
+                    <span class="input-label">Contraseña</span>
+                    <input type="password" placeholder="" ng-model="usr.pass1" required>
+                </label>
+                <label class="item item-input" id="registro-input6">
+                    <span class="input-label">Repetir contraseña</span>
+                    <input type="password" placeholder="" ng-model="usr.pass2" required>
+                </label>
+            </ion-list>
+            <h4>Campos completos: 
+                <img src="img/mal.png" width="20px" height="20px" ng-show="!(usr.usuario && usr.pass1 && usr.pass2)">
+                <img src="img/bien.png" width="20px" height="20px" ng-show="(usr.usuario && usr.pass1 && usr.pass2)">
+            </h4>
+            <h4>Contraseñas iguales: 
+                <img src="img/mal.png" width="20px" height="20px" ng-show="!(usr.pass1 == usr.pass2)">
+                <img src="img/bien.png" width="20px" height="20px" ng-show="(usr.pass1 == usr.pass2)">
+            </h4>
+            <h4>Usuario inexistente: 
+                <img ng-src='{{pathImagen}}' width="20px" height="20px" id="usr-existe">
+            </h4>
+            <button id="registro-button5" class="button button-balanced  button-block" >Registrarse</button>
+        </form>
+        <button id="registro-button16" style="font-weight:600;" class="button button-balanced  button-block button-clear" onclick="location.href='#/login'">¿Ya tenes cuenta? Logueate</button>
+    </ion-content>
+</ion-view>
