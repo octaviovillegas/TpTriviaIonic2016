@@ -1,0 +1,20 @@
+<ion-view title="Trivia UTN" id="page1" style="background-color:#DB3254;">
+    <ion-content padding="true" class="has-header">
+        <div>
+            <img src="img/g098M02zQzmLCIXNS2mF_YCKRgnz.jpg" width="100%" height="auto" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+        <div class="spacer" style="width: 300px; height: 70px;"></div>
+        <div>
+            <center>
+                <h3 style="color: #F1F1F1">
+                    Hola {{usuarioActual}} 
+                    <br>Ultimas puntuaciones:
+                    <br>"{{resultados1.usuario}}": {{resultados1.correctas}}/5
+                    <br>"{{resultados2.usuario}}": {{resultados2.correctas}}/5
+                    <br>"{{resultados3.usuario}}": {{resultados3.correctas}}/5
+                </h3>
+            </center>
+        </div>
+        <a ui-sref="juego" id="triviaUTN-button2" style="font-size:43px;border-radius:10px 10px 10px 10px;" class="button button-balanced button-large button-block icon-left ion-music-note" ng-click="cargarPreguntas()">Jugar</a>
+    </ion-content>
+</ion-view>

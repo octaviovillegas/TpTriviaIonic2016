@@ -1,0 +1,24 @@
+<ion-view title="Login" id="page6" style="background-color:#DB3254;">
+    <ion-content padding="true" class="has-header">
+        <form id="login-form1" class="list">
+            <ion-list id="login-list2">
+                <label class="item item-input" id="login-input1">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" placeholder="" ng-model="usr.usuario" required>
+                </label>
+                <label class="item item-input" id="login-input2">
+                    <span class="input-label">Contraseña</span>
+                    <input type="password" placeholder="" ng-model="usr.pass" required>
+                </label>
+            </ion-list>
+            <h4>Campos completos: 
+                <img src="img/mal.png" width="20px" height="20px" ng-show="!(usr.usuario && usr.pass)">
+                <img src="img/bien.png" width="20px" height="20px" ng-show="(usr.usuario && usr.pass)">
+                {{}}
+            </h4>
+            <div class="spacer" style="height: 40px;"></div>
+            <button id="login-button3" class="button button-balanced  button-block" ng-click="submitLogin(usr)">Logearse</button>
+            <button id="login-button4" style="font-weight:600;" class="button button-balanced  button-block button-clear" onclick="location.href='#/registro'">¿No tenes cuenta? Registrate</button>
+        </form>
+    </ion-content>
+</ion-view>

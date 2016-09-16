@@ -1,0 +1,10 @@
+<ion-view title="Juego" id="page5" style="background-color:#DB3254;">
+    <ion-content padding="true" class="has-header">
+        <h2 id="juego-heading4" style="color:#F1F1F1;text-align:center;">{{preguntaJuego.pregunta}}</h2>
+        <div class="spacer" style="width: 300px; height: 115px;"></div>
+        <button  ng-click="esCorrecta(1)" id="juego-button1" style="border-radius:10px 10px 10px 10px;" class="button button-balanced button-large button-block">{{preguntaJuego.rta1}}</button>
+        <button ng-click="esCorrecta(2)" id="juego-button2" style="border-radius:10px 10px 10px 10px;" class="button button-balanced button-large button-block">{{preguntaJuego.rta2}}</button>
+        <button ng-click="esCorrecta(3)" id="juego-button3" style="border-radius:10px 10px 10px 10px;" class="button button-balanced button-large button-block">{{preguntaJuego.rta3}}</button>
+        <h3 id="juego-heading6" style="color:#F1F1F1;text-align:center;">Correctas: {{preguntasCorrectas}} de 5</h3>
+    </ion-content>
+</ion-view>
